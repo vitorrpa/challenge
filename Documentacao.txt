@@ -1,0 +1,31 @@
+Para a realização do projeto eu utilizei as seguintes ferramentas:
+
+1) Composer
+2) MySQL
+3) Postman
+4) Sublime Text
+5) Laravel
+
+Utilizei o composer para a criação do meu projeto com o comando "composer create-project --prefer-dist laravel/laravel apiProdutos". 
+
+- Criação do projeto
+comando: composer create-project --prefer-dist laravel/laravel apiProdutos
+
+- Base de dados
+Criado manualmente no mySQL
+
+- Criação dos Models e Migration
+comandos: php artisan make:model Produto -m
+	  php artisan make:model Industria -m
+
+- Criação das tabelas do banco de dados
+comando: php artisan migrate
+
+- Criação dos Controllers
+comando: php artisan make:controller ProdutoController --resource
+	 php artisan make:controller IndustriaController --resource
+
+
+As requisições foram realizadas através da ferramenta Postman. (ApiProdutos.postman_collection.json)
+
+Banco de dados. (apiprodutos.sql)
